@@ -1,0 +1,21 @@
+# Declaração da classe
+
+class Guitarra():
+    def __init__(self, numero_serie, fabricante, modelo, tipo, madeira, preco):
+        
+        # Criação do contrutor da classe Guitarra
+        self.numero_serie = numero_serie
+        self.fabricante = fabricante
+        self.modelo = modelo
+        self.tipo = tipo
+        self.madeira = madeira
+        self.preco = preco
+
+    # Inprimindo a saída no terminal
+    def imprimindo_saida(self):
+        print(self.numero_serie, self.fabricante, self.modelo, self.tipo, self.madeira, self.preco)
+
+
+# Minha Guitarra
+minha_guitarra = Guitarra('01020304', 'fender', 'telecaster', 'elétrica', 'magno', 1500)
+minha_guitarra.imprimindo_saida()
